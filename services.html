@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gardener services | GreenNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="dashboard.html">GreenNest</a>
+      <nav>
+        <a href="dashboard.html">Dashboard</a
+        ><a href="catalog.html">Plants & supplies</a
+        ><a class="active" href="services.html">Gardener services</a
+        ><a href="orders.html">My activity</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-button" href="cart.html"
+          >Bag <span id="cartCount">0</span></a
+        ><button class="avatar" id="logoutButton">↪</button>
+      </div>
+    </header>
+    <main class="page services">
+      <p class="eyebrow">Verified local experts</p>
+      <h1>Let your garden be cared for.</h1>
+      <p class="intro">
+        Pick a service, choose a date and time, and a trusted gardener will
+        confirm your request.
+      </p>
+      <section class="service-grid">
+        <article>
+          <img
+            src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=700&q=80"
+            alt="Gardener planting flowers"
+          />
+          <h3>Home garden setup</h3>
+          <p>Design, soil preparation, and planting for a fresh new start.</p>
+          <strong>From ₹1,499</strong
+          ><button
+            class="button button-dark book-service"
+            data-service="Home garden setup"
+          >
+            Schedule <span>→</span>
+          </button>
+        </article>
+        <article>
+          <img
+            src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=700&q=80"
+            alt="Gardener pruning plants"
+          />
+          <h3>Plant care & pruning</h3>
+          <p>
+            Healthy trimming, repotting, feeding, and practical care advice.
+          </p>
+          <strong>From ₹699</strong
+          ><button
+            class="button button-dark book-service"
+            data-service="Plant care & pruning"
+          >
+            Schedule <span>→</span>
+          </button>
+        </article>
+        <article>
+          <img
+            src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=700&q=80"
+            alt="Garden lawn maintenance"
+          />
+          <h3>Lawn maintenance</h3>
+          <p>Keep your lawn neat, nourished, and ready for every season.</p>
+          <strong>From ₹899</strong
+          ><button
+            class="button button-dark book-service"
+            data-service="Lawn maintenance"
+          >
+            Schedule <span>→</span>
+          </button>
+        </article>
+      </section>
+    </main>
+    <dialog id="bookingDialog">
+      <button class="close dialog-close">×</button>
+      <p class="eyebrow">Schedule your service</p>
+      <h2 id="serviceTitle">Book a gardener</h2>
+      <form id="bookingForm" class="form">
+        <input id="selectedService" type="hidden" /><label
+          >Preferred date<input required type="date" id="serviceDate" /></label
+        ><label
+          >Preferred time<select required>
+            <option value="">Select a time</option>
+            <option>9:00 AM – 12:00 PM</option>
+            <option>12:00 PM – 3:00 PM</option>
+            <option>3:00 PM – 6:00 PM</option>
+          </select></label
+        ><label
+          >Address / garden note<textarea
+            required
+            placeholder="Your address and a brief note about your garden"
+          ></textarea></label
+        ><button class="button button-dark">
+          Request booking <span>→</span>
+        </button>
+      </form>
+    </dialog>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Log in | GreenNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page login">
+    <section class="auth-photo">
+      <div>
+        <a class="brand light" href="index.html">GreenNest</a>
+        <p>Good things grow here.</p>
+      </div>
+    </section>
+    <main class="auth-card">
+      <a class="brand mobile-brand" href="index.html">GreenNest</a>
+      <p class="eyebrow">Welcome back</p>
+      <h1>Log in to your garden.</h1>
+      <p class="muted">
+        Enter the email you used to create your GreenNest account.
+      </p>
+      <form id="loginForm" class="form">
+        <label
+          >Email address<input
+            id="loginEmail"
+            type="email"
+            required
+            placeholder="you@example.com" /></label
+        ><label
+          >Password<input
+            id="loginPassword"
+            type="password"
+            required
+            placeholder="Your password" /></label
+        ><button class="button button-dark" type="submit">
+          Log in <span>→</span>
+        </button>
+      </form>
+      <p class="auth-switch">
+        New here? <a href="index.html">Create an account</a>
+      </p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

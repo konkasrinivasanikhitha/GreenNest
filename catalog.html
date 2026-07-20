@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Plant catalog | GreenNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="dashboard.html">GreenNest</a>
+      <nav>
+        <a href="dashboard.html">Dashboard</a
+        ><a class="active" href="catalog.html">Plants & supplies</a
+        ><a href="services.html">Gardener services</a
+        ><a href="orders.html">My activity</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-button" href="cart.html"
+          >Bag <span id="cartCount">0</span></a
+        ><button class="avatar" id="logoutButton">↪</button>
+      </div>
+    </header>
+    <main class="catalog page">
+      <p class="eyebrow">Fresh from partner nurseries</p>
+      <h1>Plants for every kind of home.</h1>
+      <div class="catalog-tools">
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search plants, seeds, pots and tools"
+        />
+        <div class="filters">
+          <button class="filter active" data-filter="All">All</button
+          ><button class="filter" data-filter="Indoor">Indoor</button
+          ><button class="filter" data-filter="Outdoor">Outdoor</button
+          ><button class="filter" data-filter="Flowering">Flowering</button
+          ><button class="filter" data-filter="Seeds">Seeds</button
+          ><button class="filter" data-filter="Pots">Pots & tools</button>
+        </div>
+      </div>
+      <p class="result-count" id="resultCount"></p>
+      <section class="product-grid" id="productGrid"></section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Your bag | GreenNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="dashboard.html">GreenNest</a>
+      <nav><a href="catalog.html">Continue shopping</a></nav>
+      <div class="header-actions">
+        <a class="cart-button" href="cart.html"
+          >Bag <span id="cartCount">0</span></a
+        >
+      </div>
+    </header>
+    <main class="page checkout">
+      <p class="eyebrow">Your selection</p>
+      <h1>Your bag</h1>
+      <div class="checkout-grid">
+        <section id="cartItems"></section>
+        <aside class="checkout-card">
+          <h2>Delivery schedule</h2>
+          <p class="muted">Choose when your plants should arrive.</p>
+          <form id="checkoutForm" class="form">
+            <label
+              >Delivery date<input
+                required
+                type="date"
+                id="deliveryDate" /></label
+            ><label
+              >Preferred time<select required>
+                <option value="">Select a time</option>
+                <option>9:00 AM – 12:00 PM</option>
+                <option>12:00 PM – 3:00 PM</option>
+                <option>3:00 PM – 6:00 PM</option>
+              </select></label
+            >
+            <div class="total">
+              <span>Total</span><strong id="subtotal">₹0</strong>
+            </div>
+            <button id="placeOrder" class="button button-dark" type="submit">
+              Place order <span>→</span>
+            </button>
+          </form>
+        </aside>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashboard | GreenNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="dashboard.html">GreenNest</a>
+      <nav>
+        <a class="active" href="dashboard.html">Dashboard</a
+        ><a href="catalog.html">Plants & supplies</a
+        ><a href="services.html">Gardener services</a
+        ><a href="orders.html">My activity</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-button" href="cart.html"
+          >Bag <span id="cartCount">0</span></a
+        ><button class="avatar" id="logoutButton" title="Log out">↪</button>
+      </div>
+    </header>
+    <main class="dashboard">
+      <p class="eyebrow">Your GreenNest dashboard</p>
+      <h1 id="welcome">Hello, plant parent.</h1>
+      <p class="intro">
+        Everything you need to keep your space green and thriving.
+      </p>
+      <section class="dash-hero">
+        <div>
+          <p class="eyebrow">This week’s pick</p>
+          <h2>A quieter, greener corner.</h2>
+          <p>
+            Find plants that make a home feel more alive — delivered fresh from
+            trusted local nurseries.
+          </p>
+          <a class="button button-dark" href="catalog.html"
+            >Explore the catalog <span>→</span></a
+          >
+        </div>
+      </section>
+      <section class="quick-actions">
+        <a href="catalog.html"
+          ><b>01</b>
+          <h3>Shop plants</h3>
+          <p>Browse 36+ indoor, outdoor, flowering plants and essentials.</p>
+          <span>Explore →</span></a
+        ><a href="services.html"
+          ><b>02</b>
+          <h3>Book a gardener</h3>
+          <p>Choose a verified expert and schedule the care you need.</p>
+          <span>Book now →</span></a
+        ><a href="orders.html"
+          ><b>03</b>
+          <h3>Track activity</h3>
+          <p>See vendor updates, delivery status, and leave feedback.</p>
+          <span>View activity →</span></a
+        >
+      </section>
+      <section class="journey">
+        <p class="eyebrow">How GreenNest works</p>
+        <div>
+          <span>Register</span><i>→</i><span>Browse</span><i>→</i
+          ><span>Schedule</span><i>→</i><span>Order / book</span><i>→</i
+          ><span>Delivered</span><i>→</i><span>Share feedback</span>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

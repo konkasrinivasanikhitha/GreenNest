@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My activity | GreenNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="dashboard.html">GreenNest</a>
+      <nav>
+        <a href="dashboard.html">Dashboard</a
+        ><a href="catalog.html">Plants & supplies</a
+        ><a href="services.html">Gardener services</a
+        ><a class="active" href="orders.html">My activity</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-button" href="cart.html"
+          >Bag <span id="cartCount">0</span></a
+        ><button class="avatar" id="logoutButton">↪</button>
+      </div>
+    </header>
+    <main class="page">
+      <p class="eyebrow">Orders and bookings</p>
+      <h1>Your green journey.</h1>
+      <div id="activityList" class="activity-list"></div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
